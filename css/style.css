@@ -9,6 +9,18 @@ body {
   color: seashell;
 }
 
+body h2 {
+  font-size: 3rem;
+}
+
+body h4 {
+  font-size: 1.5rem;
+}
+
+body h5 {
+  font-size: 1.45rem;
+}
+
 body .container {
   background-color: #000;
   opacity: 0.9;
@@ -106,7 +118,8 @@ body .container main .local {
 }
 
 body .container main .local .titulo {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 body .container main .local .local_container {
@@ -126,7 +139,7 @@ body .container main .local .location {
 
 body .container main .local .location .local_title {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 body .container main .local .location p {
@@ -137,6 +150,7 @@ body .container main .local .location p {
 body .container footer .contact {
   margin-top: 40px;
   text-align: center;
+  height: 200px;
 }
 
 body .container footer .contact h1 {
