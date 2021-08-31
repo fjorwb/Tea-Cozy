@@ -43,13 +43,13 @@ body .container header .menu {
 }
 
 body .container main {
-  margin: 0px 20px;
+  text-align: center;
 }
 
 body .container main .img_bg {
   background-image: url("../img/img-mission-background.png");
-  height: 700px;
   background-size: cover;
+  height: 700px;
 }
 
 body .container main .main {
@@ -57,11 +57,100 @@ body .container main .main {
   position: relative;
   text-align: center;
   background-color: #000;
+  opacity: 0.8;
   z-index: 5;
-  top: -300px;
+  top: -350px;
 }
 
 body .container main .main h2 {
   padding: 15px 0;
+}
+
+body .container main .tea_container {
+  text-align: center;
+  display: inline-block;
+}
+
+body .container main .tea_container h2 {
+  padding: 15px 0;
+}
+
+body .container main .tea_container h4 {
+  margin-bottom: 30px;
+}
+
+body .container main .tea_container .teas {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+body .container main .tea_container .teas .tea_img {
+  padding: 10px 10px;
+  font-weight: 600;
+}
+
+body .container main .tea_container .teas .tea_img img {
+  width: 300px;
+  height: 200px;
+}
+
+body .container main .local {
+  height: 500px;
+  background-image: url("../img/img-locations-background.png");
+  background-size: cover;
+  padding: 80px 0;
+}
+
+body .container main .local .titulo {
+  margin-bottom: 40px;
+}
+
+body .container main .local .local_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body .container main .local .location {
+  width: 350px;
+  height: 400px;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+body .container main .local .location .local_title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+body .container main .local .location p {
+  padding: 10px 40px;
+  margin-top: 40px;
+}
+
+body .container footer .contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+body .container footer .contact h1 {
+  margin-bottom: 20px;
+}
+
+body .container footer .contact h5 {
+  padding: 15px 0;
+}
+
+body .container footer .copyright {
+  height: 30px;
+  text-align: left;
+  margin-left: 10px;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
