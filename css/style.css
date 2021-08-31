@@ -43,8 +43,7 @@ body .container header .menu {
 }
 
 body .container main {
-  position: relative;
-  top: 70px;
+  margin: 0px 20px;
 }
 
 body .container main .img_bg {
@@ -54,6 +53,15 @@ body .container main .img_bg {
 }
 
 body .container main .main {
+  height: 120px;
+  position: relative;
   text-align: center;
+  background-color: #000;
+  z-index: 5;
+  top: -300px;
+}
+
+body .container main .main h2 {
+  padding: 15px 0;
 }
 /*# sourceMappingURL=style.css.map */
