@@ -25,12 +25,13 @@ body .container {
   background-color: #000;
   opacity: 0.9;
   width: 1300px;
+  text-align: center;
   margin: 0 auto;
 }
 
 body .container header {
-  width: 1300px;
   background-color: #000;
+  width: 1300px;
   height: 70px;
   border: 1px solid seashell;
   display: flex;
@@ -49,7 +50,6 @@ body .container header .menu {
   margin: 0 20px;
   font-size: 1.45rem;
   color: seashell;
-  text-decoration: none;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -60,18 +60,19 @@ body .container main {
 
 body .container main .img_bg {
   background-image: url("../img/img-mission-background.png");
+  background-position: center;
   background-size: cover;
   height: 700px;
+  overflow: hidden;
 }
 
 body .container main .main {
-  height: 120px;
-  position: relative;
-  text-align: center;
+  height: 140px;
   background-color: #000;
   opacity: 0.8;
+  position: relative;
+  top: -370px;
   z-index: 5;
-  top: -350px;
 }
 
 body .container main .main h2 {
@@ -79,8 +80,10 @@ body .container main .main h2 {
 }
 
 body .container main .tea_container {
-  text-align: center;
+  width: 77%;
   display: inline-block;
+  margin-bottom: 70px;
+  margin-top: -100px;
 }
 
 body .container main .tea_container h2 {
@@ -92,16 +95,14 @@ body .container main .tea_container h4 {
 }
 
 body .container main .tea_container .teas {
-  width: 1000px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px 0;
 }
 
 body .container main .tea_container .teas .tea_img {
-  padding: 10px 10px;
+  padding: 20px 15px;
   font-weight: 600;
 }
 
@@ -110,16 +111,23 @@ body .container main .tea_container .teas .tea_img img {
   height: 200px;
 }
 
-body .container main .local {
-  height: 500px;
-  background-image: url("../img/img-locations-background.png");
-  background-size: cover;
-  padding: 80px 0;
+body .container main .tea_container .teas .tea_img p {
+  margin: 20px 0px;
 }
 
-body .container main .local .titulo {
-  margin-bottom: 15px;
+body .container main .local {
+  height: 800px;
+  width: 100%;
+  position: static;
+  background-image: url("../img/img-locations-background.png");
+  background-size: cover;
+}
+
+body .container main .local .local_title {
+  padding-top: 40px;
+  padding-bottom: 20px;
   font-weight: 700;
+  text-shadow: 1px 1px #000;
 }
 
 body .container main .local .local_container {
@@ -130,41 +138,295 @@ body .container main .local .local_container {
   justify-content: space-around;
 }
 
-body .container main .local .location {
+body .container main .local .local_container .location {
   width: 350px;
   height: 400px;
   background-color: #000;
   opacity: 0.8;
 }
 
-body .container main .local .location .local_title {
+body .container main .local .local_container .location .local_address {
   font-weight: 600;
   font-size: 1.7rem;
 }
 
-body .container main .local .location p {
-  padding: 10px 40px;
+body .container main .local .local_container .location p {
   margin-top: 40px;
+}
+
+body .container footer {
+  padding-bottom: 30px;
 }
 
 body .container footer .contact {
-  margin-top: 40px;
-  text-align: center;
   height: 200px;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
-body .container footer .contact h1 {
+body .container footer .contact h2 {
+  font-size: 3.5rem;
   margin-bottom: 20px;
 }
 
 body .container footer .contact h5 {
-  padding: 15px 0;
+  font-size: 2.25rem;
+  padding: 8px 0;
 }
 
 body .container footer .copyright {
   height: 30px;
   text-align: left;
-  margin-left: 10px;
-  padding: 20px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  Body .container {
+    width: 900px;
+  }
+  Body .container header {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  Body .container header .logo {
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  Body .container header .menu {
+    font-size: 2rem;
+  }
+  Body .container main {
+    width: 100%;
+  }
+  Body .container main .main {
+    top: -400px;
+    height: 170px;
+    overflow: hidden;
+  }
+  Body .container main .main h4 {
+    font-size: 1.75rem;
+  }
+  Body .container main .tea_container {
+    width: 100%;
+  }
+  Body .container main .tea_container .teas .tea_img {
+    padding: 10px 5px;
+  }
+  Body .container main .tea_container .teas .tea_img img {
+    width: 350px;
+    height: auto;
+    padding: 0;
+  }
+  Body .container main .tea_container .teas .tea_img p {
+    font-size: 1.75rem;
+  }
+  Body .container main .local {
+    width: 900px;
+    height: 900px;
+  }
+  Body .container main .local .local_title {
+    padding-top: 20px;
+  }
+  Body .container main .local .local_container {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  Body .container main .local .local_container .location {
+    height: 250px;
+    width: 500px;
+    padding: 5px;
+  }
+  Body .container main .local .local_container .location .local_address {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  Body .container main .local .local_container .location p {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  Body .container footer {
+    padding-bottom: 30px;
+  }
+  Body .container footer .contact {
+    margin-bottom: 50px;
+  }
+  Body .container footer .contact h1 {
+    font-size: 3.75rem;
+  }
+  Body .container footer .contact h5 {
+    font-size: 2.25rem;
+  }
+  Body .container footer .copyright {
+    text-align: center;
+  }
+  Body .container footer .copyright p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  Body .container {
+    width: 720px;
+  }
+  Body .container header {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+  }
+  Body .container header .logo {
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  Body .container main {
+    width: 100%;
+  }
+  Body .container main .main {
+    top: -400px;
+    height: 170px;
+  }
+  Body .container main .main h4 {
+    font-size: 1.75rem;
+  }
+  Body .container main .tea_container {
+    width: 100%;
+  }
+  Body .container main .tea_container .teas .tea_img img {
+    width: 500px;
+    height: auto;
+    padding: 0;
+  }
+  Body .container main .tea_container .teas .tea_img p {
+    font-size: 1.75rem;
+  }
+  Body .container main .local {
+    width: 720px;
+    height: 900px;
+  }
+  Body .container main .local .local_title {
+    padding-top: 20px;
+  }
+  Body .container main .local .local_container {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  Body .container main .local .local_container .location {
+    height: 250px;
+    width: 500px;
+    padding: 5px;
+  }
+  Body .container main .local .local_container .location .local_address {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  Body .container main .local .local_container .location p {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  Body .container footer {
+    padding-bottom: 20px;
+  }
+  Body .container footer .contact {
+    margin-bottom: 50px;
+  }
+  Body .container footer .contact h1 {
+    font-size: 1,75rem;
+  }
+  Body .container footer .contact h5 {
+    font-size: 1.75rem;
+  }
+  Body .container footer .copyright {
+    text-align: center;
+  }
+  Body .container footer .copyright p {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  Body .container {
+    width: 480px;
+  }
+  Body .container header {
+    width: 480;
+    height: 160px;
+  }
+  Body .container header .logo {
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  Body .container main {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  Body .container main .main {
+    top: -400px;
+    height: 200px;
+  }
+  Body .container main .main h4 {
+    font-size: 1.75rem;
+  }
+  Body .container main .tea_container {
+    width: 100%;
+  }
+  Body .container main .tea_container .teas .tea_img img {
+    width: 400px;
+    height: auto;
+    padding: 0;
+  }
+  Body .container main .tea_container .teas .tea_img p {
+    font-size: 1.75rem;
+  }
+  Body .container main .local {
+    width: 480px;
+    height: 800px;
+  }
+  Body .container main .local .local_title {
+    color: #000;
+  }
+  Body .container main .local .local_container {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  Body .container main .local .local_container .location {
+    width: 400px;
+    height: 190px;
+    padding: 20px 0;
+  }
+  Body .container main .local .local_container .location .local_title {
+    font-size: 2.5rem;
+  }
+  Body .container main .local .local_container .location p {
+    padding: 5px 0;
+    margin: 0;
+    font-size: 2rem;
+  }
+  Body .container footer {
+    padding-bottom: 20px;
+  }
+  Body .container footer .contact {
+    margin-bottom: 30px;
+  }
+  Body .container footer .contact h1 {
+    font-size: 2rem;
+  }
+  Body .container footer .contact h5 {
+    font-size: 2rem;
+  }
+  Body .container footer .copyright {
+    text-align: center;
+  }
+  Body .container footer .copyright p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
